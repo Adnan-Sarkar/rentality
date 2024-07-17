@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
+
+import React, {useState} from "react";
 import PromotionalVideoImage from "@/assets/promotionalVideo.png";
 import PlayIcon from "@/assets/playIcon.png";
 import Image from "next/image";
 
 const PromotionalVideo = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   return (
     <section className="bg-tertiary pt-[50px] pb-[50px] lg:pt-[82px] lg:pb-[147px]">
       <div className="container">
